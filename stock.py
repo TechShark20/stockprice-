@@ -9,8 +9,11 @@ import matplotlib.pyplot as plt
 import datetime
 import pandas as pd
 import streamlit as st
+@st.cache
 df11=pd.read_csv("stocksreport1.csv")
+@st.cache
 df21=pd.read_csv("stocksreport2.csv")
+@st.cache
 df31=pd.read_csv("stocksreport3.csv")
 df = pd.concat((df11,df21,df31))
 st.title('Stock market analyser')
