@@ -7,19 +7,20 @@ Created on Sun Jan 15 18:54:10 2023
 """
 import matplotlib.pyplot as plt
 import datetime
+import io
 import pandas as pd
 import requests
 import streamlit as st
 url="https://github.com/TechShark20/stockprice-/blob/11a045d03a26cf1ca8ebce270244669e615cd09c/stocksreport1.csv"
 
 s = requests.get(url).content
-df11=pd.read_csv(s)
+df11=pd.pd.read_csv(io.StringIO(s.decode('utf-8')))
 url="https://github.com/TechShark20/stockprice-/blob/11a045d03a26cf1ca8ebce270244669e615cd09c/stocksreport2.csv"
 s = requests.get(url).content
-df21=pd.read_csv(s)
+df21=pd.pd.read_csv(io.StringIO(s.decode('utf-8')))
 url="https://github.com/TechShark20/stockprice-/blob/11a045d03a26cf1ca8ebce270244669e615cd09c/stocksreport3.csv"
 s = requests.get(url).content
-df31=pd.read_csv(s)
+df31=pd.pd.read_csv(io.StringIO(s.decode('utf-8')))
 df = pd.concat((df11,df21,df31))
 st.title('Stock market analyser')
 st.write("""
