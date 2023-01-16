@@ -7,14 +7,12 @@ Created on Sun Jan 15 18:54:10 2023
 """
 import matplotlib.pyplot as plt
 import datetime
-from re import L
 import pandas as pd
 import streamlit as st 
-import os 
-import glob 
-os.chdir(r"C:\Users\hp\Desktop\datascience\stockprice\archive")
-all_files= glob.glob(r"C:/Users/hp/Desktop/datascience/stockprice/archive/*csv")
-df = pd.concat((pd.read_csv(f) for f in all_files))
+df1=pd.read_csv("stocksreport1.csv")
+df2=pd.read_csv("stocksreport2.csv")
+df3=pd.read_csv("stocksreport3.csv")
+df = pd.concat((df1,df2,df3))
 st.title('Stock market analyser')
 st.write("""
 Analysis of Nifty 50 stocks
