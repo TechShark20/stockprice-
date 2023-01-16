@@ -9,10 +9,7 @@ import matplotlib.pyplot as plt
 import datetime
 import pandas as pd
 import streamlit as st
-#df11=pd.read_csv("stocksreport1.csv")
-df=pd.read_csv("stocksreport2.csv")
-#df31=pd.read_csv("stocksreport3.csv")
-#df = pd.concat([df11,df21,df31],axis=0)
+df = pd.concat(map(pd.read_csv, ['stocksreport1.csv', 'stocksreport2.csv','stocksreport3.csv']), ignore_index=Tru
 st.title('Stock market analyser')
 st.write("""
 Analysis of Nifty 50 stocks
