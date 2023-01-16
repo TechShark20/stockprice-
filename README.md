@@ -1,3 +1,3 @@
 # stockprice-
-https://techshark20-stockprice--stock-xb8x6o.streamlit.app/
-check this deployment
+https://techshark20-stockprice--stock-e5jvdl.streamlit.app/
+basic tracking app for stocks
