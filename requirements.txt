@@ -1,3 +1,6 @@
 pandas 
 datetime
 matplotlib
+stocksreport1.csv
+stocksreport2.csv
+stocksreport3.csv
