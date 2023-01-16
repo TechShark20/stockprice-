@@ -9,9 +9,9 @@ import matplotlib.pyplot as plt
 import datetime
 import pandas as pd
 import streamlit as st 
-df11=pd.read_csv("stocksreport1.csv")
-df21=pd.read_csv("stocksreport2.csv")
-df31=pd.read_csv("stocksreport3.csv")
+df11=pd.read_csv("https://github.com/TechShark20/stockprice-/blob/11a045d03a26cf1ca8ebce270244669e615cd09c/stocksreport1.csv")
+df21=pd.read_csv("https://github.com/TechShark20/stockprice-/blob/11a045d03a26cf1ca8ebce270244669e615cd09c/stocksreport2.csv")
+df31=pd.read_csv("https://github.com/TechShark20/stockprice-/blob/11a045d03a26cf1ca8ebce270244669e615cd09c/stocksreport3.csv")
 df = pd.concat((df11,df21,df31))
 st.title('Stock market analyser')
 st.write("""
