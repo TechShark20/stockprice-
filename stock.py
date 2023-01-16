@@ -12,7 +12,7 @@ import streamlit as st
 df11=pd.read_csv("stocksreport1.csv")
 df21=pd.read_csv("stocksreport2.csv")
 df31=pd.read_csv("stocksreport3.csv")
-df = pd.concat([df11,df21,df31])
+df = pd.concat([df11,df21,df31],axis=0)
 st.title('Stock market analyser')
 st.write("""
 Analysis of Nifty 50 stocks
